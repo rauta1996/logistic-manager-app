@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <script src="script.js"></script>
+    <title>
+        Logistic Details
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   
+    <table class="list" id="items">
+        <thead>
+            <tr>
+                <th>Ordered ID</th>
+                <th>Product Name</th>
+                <th>Consumer Name</th>
+                <th>Email</th>
+                <th>Ordered Date</th>
+                <th>Pincode</th>
+                <th>State</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br><br>
+   
+
+    <table>
+        <tr>
+                
+            <td>
+                <div class="container">
+                <div class="col-6">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Order ID</label>
+                        <input type="text" name="Order ID" id="orderID" placeholder="eg: OD-120325">
+                    </div>
+                    <div>
+                        <label>Product Name</label>
+                        <label class="validation-error hide" id="productValidationError">This field is required.</label>
+                        <input type="text" name="productname" id="productname">
+                    </div>
+                    <div>
+                        <label>Consumer Name</label>
+                        <input type="text" name="consumername" id="consumername">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Ordered Date</label>
+                        <input type="text" name="or-date" id="orderDate">
+                    </div>
+                    <div>
+                        <label>Pincode</label>
+                        <input type="text" name="pincode" id="pincode">
+                    </div>
+                    <div>
+                        <label>State</label>
+                        <input type="text" name="state" id="state">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <button type="submit" value="save" class="btn btn-success">Save</button>
+                        <button type="submit" value="update" class="btn btn-primary">Update</button>
+                        <button type="submit" value="cancel"Class="btn btn-danger">Cancel</button>
+                    </div>
+                    
+
+                </form>
+            </div>
+            </div>
+            </td>
+        </tr>
+    </table>
+   
+</body>
+
+</html>
